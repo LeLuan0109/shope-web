@@ -1,0 +1,190 @@
+:root{
+    --primery-color:rgb(238, 77, 45);
+    --white-color:#fff;
+    --black-color:#000;
+    --text-color:#444;
+    --header-height:120px;
+    --header-width-search-height:94px;
+    --header-var-height: 27px;
+}
+
+*{
+    box-sizing: inherit;
+}
+
+html{
+    font-size:62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+/* repomsive */
+.gril{
+    width: 1200px;
+    max-width:100%;
+    margin: 0 auto;
+}
+.gril-collum{
+
+}
+.gril-full-width{
+    width: 100%;
+}
+
+.btn{
+    min-width: 120px;
+    line-height: 34px;
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+    font-size: 1.2rem;
+    padding: 0 12px ;
+    cursor: pointer;
+    color:var(--text-color);
+    display: inline-flex;
+    justify-content: center;    
+}
+.btn-primery{
+    background-color: var(--primery-color);
+    color: var(--white-color);
+}
+/* selection */
+.selection-input{
+    position: relative;
+    min-width:180px;
+    height: 34px;
+    padding: 0 12px;
+    border-radius: 2px;
+    border-color: var(--white-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--white-color);
+}
+.selection-input-label{
+    font-size: 1.4rem;
+    color: rgb(68, 56, 56);
+}
+.selection-input-icon{
+    font-size: 1.4rem;
+    color:rgb(80, 75, 75);
+    /* margin: 0 16px 0 8px; */
+    position: relative;
+    top: 1px;
+
+}
+
+
+.selection-input-list {
+    display: none;
+    border-radius: 2px;
+    position: absolute;
+    left: 0;
+    right: 0;
+   top: calc(100% - 8px);
+    background-color: var(--white-color);
+    padding: 8px 16px;
+    list-style: none;
+    padding-left: 12px;
+    z-index: 1;
+    border: 1px solid rgb(224, 222, 222);
+}
+
+.selection-input-item {
+    
+    
+}
+.selection-input-link{
+    font-size: 1.3rem;
+    color:var(--black-color);
+    text-decoration: none;
+    padding: 8px 0;
+   
+    display: block;
+}
+.selection-input:hover .selection-input-list{
+    display: block;
+    
+}
+.selection-input-link:hover{
+    color:var(--primery-color);
+}
+
+@keyframes face {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+/* tesst{
+     */
+.gril-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+     margin-right: -5px;
+}
+.girl-column_2{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 16.6667%;
+}
+.girl-column_2-4{
+    padding-left: 5px;
+        padding-right: 5px;
+        width: 20%;
+}
+.girl-column_10{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 83.3334%;
+   
+}
+/*  explain:giải nghĩa*/
+/* .gril{
+    .row{
+        .collum1{
+
+        }
+        .collum2
+    }
+} */
+/* danh sach trang */
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+.pagination-item{
+    list-style: none;
+    margin: 0 10px;
+    
+} 
+
+.pagination-item-link{
+    display: block;
+    text-align: center;
+    line-height: 30px;
+    text-decoration: none;
+    color: #939393;
+    min-width: 40px;
+    height: 30px;
+    font-size: 1.6rem;
+    border-radius: 2px;
+} 
+
+.pagination-item-active .pagination-item-link {
+    background-color: var(--primery-color);
+    color: var(--white-color);
+}
+.pagination-item-active:hover{
+    background-color:#d35941;
+}
+.pagination-item-icon{
+
+}
+
